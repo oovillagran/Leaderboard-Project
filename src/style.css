@@ -1,7 +1,110 @@
-.hello {
-  color: red;
+body {
+  min-height: 100vh;
+  flex-direction: column;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-body {
-  background-color: bisque;
+html {
+  box-sizing: border-box;
+  
+  /* top: 0; */
+  font-size: 16px;
+}
+
+.header {
+  margin: 2rem 1rem;
+  font-size: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 3rem 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.scores-section {
+  margin-left: 10%;
+  width: 60%;
+}
+
+.scores-header {
+  justify-content: space-between;
+}
+
+.scores-title,
+.add-title {
+  font-size: 2rem;
+}
+
+.list-div {
+  outline: #000 3px solid;
+  width: 100%;
+  margin: 2rem 0;
+}
+.scores-list {
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+  width: 100%;
+}
+
+li:nth-child(odd) {
+  background-color: rgb(191, 187, 187);
+}
+
+.gamer-name {
+  padding-left: 1rem;
+}
+
+.add-form {
+  flex-direction: column;
+}
+
+footer {
+  background-color: rgb(127, 123, 123);
+  padding: 2rem;
+  width: 100%;
+  margin-top: auto;
+}
+
+input {
+  width: 100%;
+  margin: 2rem 0 0;
+}
+
+.add-button {
+  margin-right: 0;
+  justify-content: end;
+}
+
+#add-button {
+  width: 20%;
+  margin: 2rem 0;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+button {
+  box-shadow: 2px 2px 1px 1px;
+}
+
+.form-scores {
+  flex-direction: column;
+  width: 40%;
+}
+
+.refresh {
+  width: 4rem;
+  padding: 0.5rem;
+  background-color: #fff;
 }
