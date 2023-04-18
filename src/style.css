@@ -12,8 +12,6 @@ body {
 
 html {
   box-sizing: border-box;
-  
-  /* top: 0; */
   font-size: 16px;
 }
 
@@ -80,6 +78,8 @@ footer {
 input {
   width: 100%;
   margin: 2rem 0 0;
+  border: #000 3px solid;
+  height: 2rem;
 }
 
 .add-button {
@@ -107,4 +107,10 @@ button {
   width: 4rem;
   padding: 0.5rem;
   background-color: #fff;
+}
+
+input::placeholder {
+  color: #000;
+  font-weight: bold;
+
 }
