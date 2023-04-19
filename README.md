@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <h3><b>Project Review (Trials)</b></h3>
+  <h1><b>Leaderboard Project</b></h1>
 
 </div>
 
@@ -11,32 +11,31 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Leaderboard Project](#-leaderboard-project)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [� Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Project Review (Trials)<a name="about-project"></a>
+# 📖 Leaderboard Project<a name="about-project"></a>
 
 
-**Project Review (Trials)** intends to execute my first code review, as in week number one from Microverse software developer program I upgraded my knowledge and skills in *HTML* and *CSS*. This code review is going to be performance about the **Built a Survey Form project** from trials done in the admission proccess.
+**Leaderboard** website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3). For this application the priority is to create a working version of the leaderboard that preserves user input. There were three milestones for build this project. The First one is the basic structure of the page, for the second and third milestones I will connect to the Leaderboard API in order to implement the actions behind the "Refresh" and "Submit" buttons. In the last step, you will play with async & await and add as much styling as possible in the given time.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -57,24 +56,23 @@
   </ul>
 </details>
 
+<details>
+  <summary>JavaScripts</summary>
+  <ul>
+    <li>JavaScripts</li>
+  </ul>
+</details>
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-
-- Creating branches on repositories.
-- Use of linter on HTML&CSS project.
+- Use callbacks and promises.
+- Use of linter on HTML&CSS&javaScript project.
 - Write a correct descriptive README file.
-- Perform a code review in a HTML and CSS project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- N/A
+- Perform a code review in a HTML, CSS, and javaScript project.
+- Use of ES6 modules to write modular JavaScript.
+- Use of webpack to bundle JavaScript.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,7 +132,6 @@ To run tests, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-
 👤 **Oscar Villagran**
 
 - GitHub: [@oovillagran](https://github.com/oovillagran)
@@ -150,10 +147,11 @@ To run tests, execute the following command:
 
 
 
-- [ ] **Use of linter in HTML&CSS projects**
-- [ ] **Use README template file**
-- [ ] **Ask for a code review**
-- [ ] **Follow the list from the article ["How_to_give_a_code_review?"](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/code-review/articles/give_code_review_basics.md).**
+- [ ] **Send and receive data from API.**
+- [ ] **Styles**
+- [ ] **Preserved data using API.**
+- [ ] **Use of javaScript modules**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +178,7 @@ If you like this project feel free to make any comment, all contributions are we
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse comunity, especially reviewers guys, they do an excellent job. I thank my learning, morning session and standup partners for supporting me.
+I would like to thank Microverse comunity, my learning, morning session and standup partners for supporting me.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

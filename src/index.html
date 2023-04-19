@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
 </head>
-<body>
-    <h1>Hello webpack!</h1>
+<body class="flex">
+  <header>
+    <h1 class="header">Leaderboard</h1>
+  </header>
+  <main class="grid">
+    <section class="scores">
+      <div class="scores-section">
+        <div class="scores-header flex">
+          <h2 class="scores-title">Recent scores</h2>
+          <button class="refresh" type="button" id="refresh-button">Refresh</button>
+        </div>
+        <div class="list-div">
+          <ul class="scores-list">
+            <li class="gamer-name">Name: 100</li>
+            <li class="gamer-name">Name: 20</li>
+            <li class="gamer-name">Name: 50</li>
+            <li class="gamer-name">Name: 78</li>
+            <li class="gamer-name">Name: 125</li>
+            <li class="gamer-name">Name: 77</li>
+            <li class="gamer-name">Name: 42</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+    </section>
+    <section class="form-scores flex">
+      <h3 class="add-title">Add your score</h3>
+      <form id="add-score" class="add-form flex" action="" method="">
+        <label for="name">
+          <input type="text" name="name" id="name" class="add-name" placeholder="Your name" required>
+        </label>
+        <label for="score">
+          <input type="number" name="score" id="score" class="add-score" placeholder="Your score" required>
+        </label>
+        <div class="add-button flex">
+          <button type="button" id="add-button">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    </section>
+  </main>
+  <footer class="footer">
+
+  </footer>
+  
 </body>
 </html>
