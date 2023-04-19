@@ -81,7 +81,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Here is a [live demo](https://github.com/oovillagran/Leaderboard-Project/dist/index.html).
+- N/A
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
