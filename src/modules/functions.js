@@ -57,6 +57,7 @@ const addScore = () => {
       return null;
     }
   });
+  return null;
 };
 
 // display scores
