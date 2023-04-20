@@ -44,7 +44,7 @@ const addScore = () => {
       if (name === '' || score === '') {
         resolve();
       }
-  
+
       await postScores({ user: name, score });
       const message = [];
       message.push('Saved information');
@@ -59,7 +59,7 @@ const addScore = () => {
       }
     });
   });
- };
+};
 
 // display scores
 
