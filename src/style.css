@@ -58,12 +58,17 @@ html {
   width: 100%;
 }
 
+.score-list li {
+
+}
+
 li:nth-child(odd) {
   background-color: rgb(191, 187, 187);
 }
 
 .gamer-name {
   padding-left: 1rem;
+  gap: 2rem;
 }
 
 .add-form {
@@ -90,7 +95,7 @@ input {
 }
 
 #add-button {
-  width: 20%;
+  width: 4rem;
   margin: 2rem 0;
   padding: 0.5rem;
   background-color: #fff;

@@ -19,9 +19,10 @@ const loadGamersAndScores = () => {
       const idGamer = document.createElement('span');
       const nameGamer = document.createElement('p');
       const scoreGamer = document.createElement('p');
-      idGamer.textContent = `${index}`;
-      nameGamer.textContent = `${element.name}`;
-      scoreGamer.textContent = `${element.score};`
+      idGamer.textContent = `${index + 1}`;
+      nameGamer.textContent = `${element.name}:`;
+      scoreGamer.textContent = `${element.score}`;
+      gamerElement.classList.add('flex', 'gamer-name')
 
       // Create the scores view section
 
@@ -42,7 +43,7 @@ const loadGamersAndScores = () => {
       localStorage.setItem('stockedScores', JSON.stringify(scores));
       // reset form values
       document.getElementById('add-score').reset();
-      displayScores();
+      //displayScores();
     } else {
       const messages = [];
       if (name === '' && score === '') {
@@ -58,6 +59,7 @@ const loadGamersAndScores = () => {
         errorMessage.innerText = messages.join(', ');
         setTimeout(() => {
           errorMessage.remove();
+          window.location.reload();
         }, 3000);
       }
     }
@@ -75,6 +77,12 @@ const loadGamersAndScores = () => {
     const name = document.querySelector('#name').value;
     const score = document.querySelector('#score').value;
     addScore(name, score);
+  });
+
+  const  refreshButton = document.getElementById('refresh-button');
+  refreshButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    displayScores();
   });
 };
 
