@@ -1,4 +1,10 @@
 import './style.css';
-import loadGamersAndScores from './modules/functions.js';
 
-loadGamersAndScores ();
+import {
+	displayScores, addScore, refreshButton
+} from './modules/functions.js';
+
+displayScores();
+addScore();
+
+refreshButton.addEventListener('click', displayScores);
