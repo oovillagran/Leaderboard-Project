@@ -55,8 +55,6 @@ const addScore = () => {
         document.getElementById('add-score').reset();
       }, 3000);
       return null;
-    } else {
-      return null;
     }
   });
 };
