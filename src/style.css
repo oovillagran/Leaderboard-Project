@@ -58,10 +58,6 @@ html {
   width: 100%;
 }
 
-.score-list li {
-
-}
-
 li:nth-child(odd) {
   background-color: rgb(191, 187, 187);
 }
