@@ -64,6 +64,7 @@ li:nth-child(odd) {
 
 .gamer-name {
   padding-left: 1rem;
+  gap: 2rem;
 }
 
 .add-form {
@@ -90,7 +91,7 @@ input {
 }
 
 #add-button {
-  width: 20%;
+  width: 4rem;
   margin: 2rem 0;
   padding: 0.5rem;
   background-color: #fff;
