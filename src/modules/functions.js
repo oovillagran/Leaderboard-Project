@@ -36,8 +36,8 @@ const postScores = async (score) => {
 
 const addScore = () => {
   const addButton = document.getElementById('add-button');
-  addButton.addEventListener('click', async (event) => {
-    event.preventDefault();
+  addButton.addEventListener('click', async (e) => {
+    e.preventDefault();
     const name = document.querySelector('#name').value;
     const score = document.querySelector('#score').value;
     if (name === '' || score === '') {
