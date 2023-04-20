@@ -4,7 +4,7 @@ const api = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/game
 
 const getScores = async () => {
   try {
-    const response = await fetch (`${api}/scores/`, {
+    const response = await fetch(`${api}/scores/`, {
       method: 'GET',
     });
     const responseScore = await response.json();
@@ -18,7 +18,7 @@ const getScores = async () => {
 
 const postScores = async (score) => {
   try {
-    const response = await fetch (`${api}/scores/`, {
+    const response = await fetch(`${api}/scores/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ const postScores = async (score) => {
   } catch (error) {
     return error;
   }
-}
+};
 
 // add scores
 
@@ -43,8 +43,8 @@ const addScore = () => {
     if (name === '' || score === '') {
       return null;
     }
-    
-    await postScores({ user:name, score});
+
+    await postScores({ user: name, score });
     const message = [];
     message.push('Saved information');
     if (message.length > 0) {
@@ -54,6 +54,8 @@ const addScore = () => {
         saveMessage.remove();
         document.getElementById('add-score').reset();
       }, 3000);
+      return null;
+    } else {
       return null;
     }
   });
@@ -76,15 +78,13 @@ const displayScores = async () => {
       idGamer.textContent = `${index + 1}`;
       nameGamer.textContent = `${element.user}:`;
       scoreGamer.textContent = `${element.score}`;
-      gamerElement.classList.add('flex', 'gamer-name')
-  
+      gamerElement.classList.add('flex', 'gamer-name');
+
       // Create the scores view section
-  
       gamerElement.appendChild(idGamer);
       gamerElement.appendChild(nameGamer);
       gamerElement.appendChild(scoreGamer);
       scoresList.appendChild(gamerElement);
-
     });
   } catch (error) {
     return error;
@@ -92,9 +92,9 @@ const displayScores = async () => {
   return null;
 };
 
-const  refreshButton = document.getElementById('refresh-button');
+const refreshButton = document.getElementById('refresh-button');
 refreshButton.addEventListener('click', displayScores);
 
-export { 
+export {
   displayScores, addScore, postScores, getScores, refreshButton,
 };

@@ -1,7 +1,7 @@
 import './style.css';
 
 import {
-	displayScores, addScore, refreshButton
+  displayScores, addScore, refreshButton,
 } from './modules/functions.js';
 
 displayScores();
