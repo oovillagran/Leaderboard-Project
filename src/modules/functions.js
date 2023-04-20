@@ -36,29 +36,30 @@ const postScores = async (score) => {
 
 const addScore = () => {
   const addButton = document.getElementById('add-button');
-  addButton.addEventListener('click', async (e) => {
-    e.preventDefault();
-    const name = document.querySelector('#name').value;
-    const score = document.querySelector('#score').value;
-    if (name === '' || score === '') {
-      return null;
-    }
-
-    await postScores({ user: name, score });
-    const message = [];
-    message.push('Saved information');
-    if (message.length > 0) {
-      const saveMessage = document.getElementById('save');
-      saveMessage.innerText = message.join(', ');
-      setTimeout(() => {
-        saveMessage.remove();
-        document.getElementById('add-score').reset();
-      }, 3000);
-      return null;
-    }
+  return new Promise((resolve) => {
+    addButton.addEventListener('click', async (e) => {
+      e.preventDefault();
+      const name = document.querySelector('#name').value;
+      const score = document.querySelector('#score').value;
+      if (name === '' || score === '') {
+        resolve();
+      }
+  
+      await postScores({ user: name, score });
+      const message = [];
+      message.push('Saved information');
+      if (message.length > 0) {
+        const saveMessage = document.getElementById('save');
+        saveMessage.innerText = message.join(', ');
+        setTimeout(() => {
+          saveMessage.remove();
+          document.getElementById('add-score').reset();
+        }, 3000);
+        resolve();
+      }
+    });
   });
-  return null;
-};
+ };
 
 // display scores
 
