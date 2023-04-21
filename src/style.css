@@ -1,7 +1,7 @@
 body {
   min-height: 100vh;
   flex-direction: column;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,11,121,0.9921218487394958) 41%, rgba(0,212,255,1) 97%);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 11, 121, 0.9921218487394958) 41%, rgba(0, 212, 255, 1) 97%);
 }
 
 *,
@@ -21,6 +21,12 @@ html {
 .header {
   margin: 2rem 1rem;
   font-size: 4rem;
+  background-image: url(../images/title1.jfif);
+  background-size: contain;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
 }
 
 .grid {
@@ -31,15 +37,6 @@ html {
 
 .flex {
   display: flex;
-}
-
-.header {
-  background-image: url(../images/title1.jfif);
-  background-size: contain;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-  background-clip: border-box;
-  -webkit-background-clip: text;
 }
 
 .scores-section {
