@@ -1,6 +1,8 @@
 body {
   min-height: 100vh;
   flex-direction: column;
+  /* background: rgb(2,0,36); */
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,11,121,0.9921218487394958) 41%, rgba(0,212,255,1) 97%);
 }
 
 *,
@@ -14,6 +16,7 @@ body {
 html {
   box-sizing: border-box;
   font-size: 16px;
+  font-family: 'DynaPuff', cursive;
 }
 
 .header {
@@ -31,9 +34,21 @@ html {
   display: flex;
 }
 
+.header {
+  background-image: url(../images/title1.jfif);
+  background-size: contain;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+}
+
 .scores-section {
   margin-left: 10%;
   width: 60%;
+  background-color: #fff;
+  box-shadow: 10px 10px 10px 10px;
+  padding: 0.5rem;
 }
 
 .scores-header {
@@ -59,12 +74,13 @@ html {
 }
 
 li:nth-child(odd) {
-  background-color: rgb(191, 187, 187);
+  background-color: rgb(154, 229, 240);
 }
 
 .gamer-name {
   padding-left: 1rem;
   gap: 2rem;
+  justify-content: space-around;
 }
 
 .add-form {
@@ -72,7 +88,7 @@ li:nth-child(odd) {
 }
 
 footer {
-  background-color: rgb(127, 123, 123);
+  background-color: rgb(105, 212, 228);
   padding: 2rem;
   width: 100%;
   margin-top: auto;
@@ -95,6 +111,8 @@ input {
   margin: 2rem 0;
   padding: 0.5rem;
   background-color: #fff;
+  font-family: 'DynaPuff', cursive;
+  font-size: 0.8rem;
 }
 
 button {
@@ -103,16 +121,32 @@ button {
 
 .form-scores {
   flex-direction: column;
-  width: 40%;
+  width: 60%;
+  outline: #000 4px solid;
+  padding: 0 3rem;
+  height: 16rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  background-color: #fff;
 }
 
 .refresh {
   width: 4rem;
   padding: 0.5rem;
   background-color: #fff;
+  font-family: 'DynaPuff', cursive;
+  font-size: 0.8rem;
 }
 
 input::placeholder {
   color: #000;
   font-weight: bold;
+}
+
+span {
+  width: 1rem;
+}
+
+li p {
+  width: 8rem;
 }
