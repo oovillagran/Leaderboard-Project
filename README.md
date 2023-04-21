@@ -16,7 +16,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [� Getting Started ](#-getting-started-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
@@ -73,6 +74,15 @@
 - Perform a code review in a HTML, CSS, and javaScript project.
 - Use of ES6 modules to write modular JavaScript.
 - Use of webpack to bundle JavaScript.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+- Here you will see a [Live Demo](https://oovillagran.github.io/Leaderboard-Project/dist/index.html) of my project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,11 +156,7 @@ To run tests, execute the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-
-- [ ] **Send and receive data from API.**
-- [ ] **Styles**
-- [ ] **Preserved data using API.**
-- [ ] **Use of javaScript modules**
+- [ ] **Using react**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
