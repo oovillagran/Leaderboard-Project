@@ -169,7 +169,6 @@ hr {
 
   .form-scores {
     margin-left: 20%;
-    height: 12rem;
     margin-bottom: 3rem;
   }
 
@@ -186,11 +185,18 @@ hr {
     text-align: center;
   }
 
-  .refresh {
+  .refresh,
+  #add-button {
     color: #fff;
     background-color: rgb(15, 15, 82);
     height: 3rem;
     padding: 0.25rem;
+    z-index: 1;
+  }
+
+  #add-button {
+    width: 100%;
+    margin: 1rem 0;
     z-index: 1;
   }
 }
